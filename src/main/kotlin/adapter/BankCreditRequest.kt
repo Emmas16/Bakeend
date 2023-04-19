@@ -1,3 +1,3 @@
 package adapter
 
-data class BankCreditRequest()
+data class BankCreditRequest(val customer: String, val amount: Double)

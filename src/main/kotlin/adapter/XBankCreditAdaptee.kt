@@ -1,4 +1,15 @@
 package adapter
 
-class XBankCreditAdaptee {
+class XBankCreditAdaptee : IBankAdapter {
+        override fun sendCreditRequest(request: BankCreditRequest): BankCreditResponse {
+            val xrequest = XBankCreditRequest(request.customer, request.amount)
+
+            val api = XBankCreditAPI()
+
+            val xResponse = BankCreditResponse()
+
+            xResponse.approved= api.sendCreditRequest(xrequest)!!.approval
+
+            return (xResponse)
+        }
 }

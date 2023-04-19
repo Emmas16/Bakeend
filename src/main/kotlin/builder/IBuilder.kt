@@ -1,4 +1,5 @@
 package builder
+ interface IBuilder<T> {
 
-class IBuilder {
+    fun build():T
 }

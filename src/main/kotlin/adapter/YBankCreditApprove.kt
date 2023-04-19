@@ -1,3 +1,3 @@
 package adapter
 
-data class YBankCreditApprove()
+data class YBankCreditApprove(val name: String, val credit: Double)

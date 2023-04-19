@@ -1,3 +1,4 @@
 package adapter
 
-data class XBankCreditRequest()
+data class XBankCreditRequest(val customerName: String,
+                              val requestAmount: Double)
