@@ -12,6 +12,4 @@ class DateFormatObserver : IObserver {
             )
         }
     }
-
-
 }

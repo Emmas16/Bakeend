@@ -10,7 +10,4 @@ class MoneyFormatObserver: IObserver {
             )
         }
     }
-
-
-
 }

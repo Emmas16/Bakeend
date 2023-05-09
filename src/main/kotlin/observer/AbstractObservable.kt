@@ -9,12 +9,9 @@ abstract class AbstractObservable   {
         observers.add(observer)
     }
 
-
     open fun removeObserver(observer: IObserver) {
         observers.remove(observer)
     }
-
-
     open fun notifyAllObservers(command: String?, source: Any?) {
         for (observer in observers) {
             observer.notifyObserver(command, source)
